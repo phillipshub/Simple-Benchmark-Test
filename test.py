@@ -15,11 +15,9 @@ LOG_FILE = "SBT_Log.txt"
 
 def simple_benchmark(count_value = 1_000_000_000_000, log = "a"):
   """Count to value, log option."""
-  print()
   #Start datetime.
   start = datetime.now()
   start_test = start.strftime("time: %H:%M:%S, date: %m/%d/%Y")
-  print("Start-%s.\nTesting...\n" %start_test)
   #Proof of count made.
   current_number = 0
   #Count loop.
@@ -28,21 +26,15 @@ def simple_benchmark(count_value = 1_000_000_000_000, log = "a"):
   finish = datetime.now()
   finish_test = finish.strftime("time: %H:%M:%S, date: %m/%d/%Y")
   log_date = finish.strftime("%m/%d/%Y")
-  print("Test Complete.\nFinish-%s." %finish_test)
-  #Number reached.
-  print("Count......: {:,}".format(current_number))
-  #Runtime
-  print("Runtime....: %s\n" %(finish - start))
   #Writing to a log file.
-  if log != "off":
-    with open(LOG_FILE, log) as result:
-      result.writelines([
-        "Simple Benchmark Test results...: %s\n" %log_date,
-        "Started.........................: %s\n" %start_test,
-        "Completed.......................: %s\n" %finish_test,
-        "Runtime.........................: %s\n" %(finish - start),
-        "Count value.....................: {:,}\n\n".format(current_number)])
-      result.close()
+  with open(LOG_FILE, log) as result:
+    result.writelines([
+      "Simple Benchmark Test results...: %s\n" %log_date,
+      "Started.........................: %s\n" %start_test,
+      "Completed.......................: %s\n" %finish_test,
+      "Runtime.........................: %s\n" %(finish - start),
+      "Count value.....................: {:,}\n\n".format(current_number)])
+    result.close()
 
 #------------------------------------------------------------------------------
 
