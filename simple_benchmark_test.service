@@ -1,0 +1,7 @@
+[Unit]
+Description=Simple Benchmark Test
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/python3 /YOUR PATH HERE/Simple_Benchmark_Test/test.py
