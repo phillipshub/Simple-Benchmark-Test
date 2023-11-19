@@ -14,7 +14,7 @@
 #
 # Simple Benchmark Test counts to one trillion and creates a log entry of the
 # time spanned. The log file can be reset at any time. You have the ability
-# to choose custom ranges, overwrite existing an log, and run without logging
+# to choose custom ranges, overwrite an existing log, and run without logging
 # if desired.
 #
 # Current test results are displayed to the terminal upon completion.
