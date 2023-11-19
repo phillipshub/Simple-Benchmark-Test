@@ -8,7 +8,7 @@ Simple Benchmark Test is intended to measure system performance over an extended
 
 Upon successful completion test information is saved to a log file for performance tracking over multiple sessions or for troubleshooting.
 
-Simple Benchmark Test counts to one trillion and creates a log entry of the time spanned. The log file can be reset at any time. You have the ability to choose custom ranges, overwrites an existing log, and run without logging if desired.
+Simple Benchmark Test counts to one trillion and creates a log entry of the time spanned. The log file can be reset at any time. You have the ability to choose custom ranges, overwrite an existing log, and run without logging if desired.
 
 Current test results are displayed to the terminal upon completion.
 
